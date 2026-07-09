@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#05070e"/>
+<title>Visual Data Music — Interactive 3D Map of the World of Music</title>
+<meta name="description" content="The entire world of music as one navigable 3D network — industry, business, culture, rights, genres and subgenres, instruments, production, sound, performance, careers and traditions, from the record deal to the raga, in thousands of connected bubbles."/>
+<link rel="canonical" href="https://vdata.liako.eu/music/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Visual Data by Liako"/>
+<meta property="og:url" content="https://vdata.liako.eu/music/"/>
+<meta property="og:title" content="Visual Data Music — Interactive 3D Map of the World of Music"/>
+<meta property="og:description" content="Industry, business, culture, rights, genres, instruments, production, sound, performance and careers — the whole world of music as one navigable 3D network."/>
+<meta property="og:image" content="https://vdata.liako.eu/og/music.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="3D network map of the world of music — domains, genres and connections"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Visual Data Music — Interactive 3D Map of the World of Music"/>
+<meta name="twitter:description" content="The whole world of music — industry, culture, rights, genres, instruments and careers — as one navigable 3D network."/>
+<meta name="twitter:image" content="https://vdata.liako.eu/og/music.jpg"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebApplication","@id":"https://vdata.liako.eu/music/#app","name":"Visual Data Music","url":"https://vdata.liako.eu/music/","description":"Interactive 3D network of the entire world of music — industry, business, culture, rights, genres and subgenres, instruments, recording and production, sound and technology, performance and careers — organised as thousands of connected bubbles.","applicationCategory":"EducationalApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript and WebGL","isAccessibleForFree":true,"inLanguage":"en","image":"https://vdata.liako.eu/og/music.jpg","creator":{"@id":"https://liako.eu/#organization"},"publisher":{"@id":"https://liako.eu/#organization"},"isPartOf":{"@id":"https://vdata.liako.eu/#website"},"about":[{"@type":"Thing","name":"Music","sameAs":"https://en.wikipedia.org/wiki/Music"},{"@type":"Thing","name":"Music industry","sameAs":"https://en.wikipedia.org/wiki/Music_industry"}]},
+ {"@type":"BreadcrumbList","@id":"https://vdata.liako.eu/music/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Visual Data","item":"https://vdata.liako.eu/"},{"@type":"ListItem","position":2,"name":"Music","item":"https://vdata.liako.eu/music/"}]},
+ {"@type":"WebSite","@id":"https://vdata.liako.eu/#website","name":"Visual Data by Liako","url":"https://vdata.liako.eu/","publisher":{"@id":"https://liako.eu/#organization"}},
+ {"@type":"Organization","@id":"https://liako.eu/#organization","name":"Liako","url":"https://liako.eu/"}
+]}
+</script>
+<link rel="icon" href="/icons/liako-32x32.png" sizes="32x32"/>
+<link rel="icon" href="/icons/liako-192x192.png" sizes="192x192"/>
+<link rel="apple-touch-icon" href="/icons/liako-180x180.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="includes/css/style.css?v=2"/>
+</head>
+<body>
+<div id="graph"></div>
+<div id="loading">Assembling the world of music…</div>
+
+<header>
+  <div class="brand">
+    <h1>Visual Data <span class="d">Music</span></h1>
+    <div class="sub">The whole world of music in one interactive map — industry, business, culture, rights, genres, instruments, production, performance and careers.</div>
+  </div>
+  <div id="controls">
+    <button id="bAll" title="Show every bubble at once and keep them all visible — clicking then only moves the camera">Show all</button>
+    <button id="bFit" title="Fit everything currently open into view">Fit view</button>
+    <button id="bReset" title="Collapse back to the domains">Reset</button>
+  </div>
+  <div id="search"><input id="q" type="search" placeholder="Search a genre, deal, role, instrument…" autocomplete="off"/></div>
+</header>
+<div id="crumbs"></div>
+
+<div id="panel">
+  <div class="close" id="pclose">×</div>
+  <div class="ph" id="pph"></div>
+  <div class="bd" id="pbd"></div>
+</div>
+
+<button id="legend-btn" title="Domains — show / hide">◈ Legend</button>
+<div id="legend"></div>
+<a id="gh-link" href="https://github.com/liakomedia" target="_blank" rel="noopener"
+   style="position:fixed;right:16px;bottom:14px;z-index:11;font-family:'JetBrains Mono',monospace;font-size:10.5px;
+   color:#9fb0d8;text-decoration:none;background:rgba(11,10,26,.72);border:1px solid rgba(160,150,210,.3);
+   border-radius:9px;padding:7px 12px;backdrop-filter:blur(8px);display:none">✦ Source on GitHub ↗</a>
+<div id="hud"></div>
+
+<script src="https://unpkg.com/3d-force-graph"></script>
+<script>if(typeof ForceGraph3D==='undefined'){document.write('<script src="https://cdn.jsdelivr.net/npm/3d-force-graph"><\/script>');}</script>
+<script src="includes/js/data.js?v=1"></script>
+<script src="includes/js/app.js?v=2"></script>
+<script defer src="/track.js"></script>
+</body>
+</html>
