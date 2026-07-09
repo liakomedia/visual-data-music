@@ -4,7 +4,8 @@
 [![Licence: MIT (code)](https://img.shields.io/badge/licence-MIT_(code)-f4f4f4?style=flat)](LICENSE)
 [![Three.js](https://img.shields.io/badge/three.js-3d--force--graph-049EF4?style=flat&logo=threedotjs&logoColor=white)](https://threejs.org)
 [![Entries](https://img.shields.io/badge/entries-2%2C300%2B-c084fc?style=flat)](#)
-[![Structure](https://img.shields.io/badge/structure-14_domains-b58ee7?style=flat)](#)
+[![Examples](https://img.shields.io/badge/examples-23%2C000%2B-b58ee7?style=flat)](#)
+[![Structure](https://img.shields.io/badge/structure-14_domains-8ecae6?style=flat)](#)
 [![Build](https://img.shields.io/badge/build-none_·_vanilla_JS-3fb950?style=flat)](#running-locally)
 
 ![Visual Data Music — orbiting the network](preview.gif)
@@ -16,8 +17,10 @@ The entire world of music as an interactive 3D network — **14 domains** (indus
 rights & law, creation & composition, instruments & tools, recording & production, sound &
 technology, genres & styles, world traditions, performance & live, events, media &
 distribution, roles & careers, education & scholarship) branching into more than **2,300
-entries**, from the record deal to the raga. Fly through the transparent domain bubbles,
-toggle domains in the legend, and search any genre, deal, role or instrument.
+entries** — and every entry opens into **10 real examples** (23,000+ example bubbles in all),
+from the record deal to the raga. Fly through the transparent domain bubbles, click any
+end-bubble to reveal its ten examples, toggle domains in the legend, and search any genre,
+deal, role or instrument.
 
 The music network (domains, sub-areas, entries and their descriptions) was compiled
 editorially by [Liako](https://liako.eu) from public reference material.
